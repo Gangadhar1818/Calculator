@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body><center>    <script src="script.js"></script>
+    <div>
+      <br>
+    </div>
+    <div id="parent">
+        <input type="text" id="input" readonly><br><br>
+        <div class="design">
+          <button class="btn1" onclick="restart()">AC</button>
+          <button class="btn3" onclick="lastDigit()">⬅</button>
+          <button class="btn1" onclick="valuePass('**','op')">**</button>
+          <button class="btn1" onclick="valuePass('/','op')">/</button>
+         </div><br>
+        <div class="design">
+          <button class="btn" id="hello" onclick="valuePass(1)">1</button>
+          <button class="btn" onclick="valuePass(2,'num')">2</button>
+          <button class="btn" onclick="valuePass(3,'num')">3</button>
+          <button class="btn1" onclick="valuePass('*','op')">*</button>
+         </div>
+         <br> 
+        <div class="design">
+          <button class="btn" onclick="valuePass(4,'num')">4</button>
+          <button class="btn" onclick="valuePass(5,'num')">5</button>
+          <button class="btn" onclick="valuePass(6,'num')">6</button>
+          <button class="btn1" onclick="valuePass('+','op')">+</button>
+         </div>
+         <br>
+        <div class="design">
+          <button class="btn" onclick="valuePass(7,'num')">7</button>
+          <button class="btn" onclick="valuePass(8,'num')">8</button>
+          <button class="btn" onclick="valuePass(9,'num')">9</button>
+          <button class="btn1" onclick="valuePass('-','op')">-</button>
+         </div>
+         <br>
+        <div class="design"> 
+          <button class="btn1" onclick="valuePass('%','op')">%</button>
+          <button class="btn" onclick="valuePass(0,'num')">0</button>
+          <button class="btn1" onclick="valuePass('.','op')">.</button>
+          <button class="btn2" onclick="operation()">=</button>
+         </div>
+    </div>
+    </center>
+</body>
+</html>
